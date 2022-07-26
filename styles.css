@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-style: "Poppins", "JetBrains Mono NF", sans-serif;
+  color: #fff;
+  font-size: 62.5%;
+}
+nav {
+  background: rgb(59, 32, 87);
+  height: 3em;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.8em;
+  font-size: 1rem;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+main {
+  background: rgb(91, 39, 139);
+  display: flex;
+  justify-content: space-between;
+  height: 90vh;
+  font-size: 1.2rem;
+}
+.left p {
+  font-size: 0.8rem;
+}
+.links img {
+  width: 2.5em;
+  text-align: center;
+}
+.right img {
+  width: 30em;
+  border-radius: 30%;
+}
+.section {
+  background-color: rgb(59, 32, 87);
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 10em;
+  margin: 5em auto;
+}
+.text {
+  font-size: 2em;
+  padding: 3em;
+  background: #fff;
+  color: rgb(59, 32, 87);
+}
+.text h1 {
+  display: inline;
+  background: rgb(201, 194, 207);
+  padding: 0.2em;
+}
+.text p {
+  margin-top: 1em;
+  color: rgb(71, 67, 75);
+}
+.section img {
+  width: 20rem;
+}
+footer {
+  background: rgb(59, 32, 87);
+}
