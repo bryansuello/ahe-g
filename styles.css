@@ -4,44 +4,60 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
-
 body {
-  font-style: "Poppins", "JetBrains Mono NF", sans-serif;
+  font-family: "Poppins", "JetBrains Mono NF", sans-serif;
   color: #fff;
   font-size: 62.5%;
 }
 nav {
   background: rgb(59, 32, 87);
-  height: 3em;
+  height: 80px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-top: 0.8em;
-  font-size: 1rem;
 }
-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-  width: 50%;
+.logo {
+  line-height: 80px;
+  font-size: 35px;
+  padding: 0 100px;
 }
-main {
-  background: rgb(91, 39, 139);
-  display: flex;
-  justify-content: space-between;
-  height: 90vh;
-  font-size: 1.2rem;
+nav ul {
+  margin-right: 50px;
 }
-.left p {
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
   font-size: 0.8rem;
+  padding: 0 2em;
 }
-.links img {
-  width: 2.5em;
-  text-align: center;
+nav ul li a {
+  color: #fff;
+  padding: 7px 13px;
+  border-radius: 3px;
 }
-.right img {
-  width: 30em;
-  border-radius: 30%;
+a:hover {
+  background: #c9c2cf;
+  color: rgb(59, 32, 87);
+}
+#chec {
+  display: none;
+}
+.checkbtn {
+  width: 4em;
+  height: 4em;
+  line-height: 80px;
+  margin: 2em 50px 0 0;
+  cursor: pointer;
+}
+.checkbtn:hover {
+  filter: invert(0%) sepia(87%) saturate(7500%) hue-rotate(284deg)
+    brightness(79%) contrast(109%);
+}
+.checkbtn:active {
+  padding: 2px;
 }
 .section {
   background-color: rgb(59, 32, 87);
@@ -71,4 +87,125 @@ main {
 }
 footer {
   background: rgb(59, 32, 87);
+}
+
+@media (max-width: 952px) {
+  .logo {
+    line-height: 80px;
+    font-size: 30px;
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 858px) {
+  nav ul {
+    display: none;
+  }
+  #chec {
+    display: block;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 78px;
+    transition: all 1s;
+  }
+  nav ul li {
+    text-align: center;
+    font-size: 1rem;
+    color: #c9c2cf;
+    background-color: rgb(36, 22, 51);
+    border-bottom: 1px solid rgb(40, 21, 59);
+  }
+  nav ul li a {
+    display: block;
+  }
+  a:hover,
+  nav ul li:hover {
+    background: #c9c2cf;
+    color: rgb(59, 32, 87);
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    font-size: 25px;
+    padding: 0 50px;
+  }
+  .checkbtn {
+    width: 3em;
+    height: 3em;
+    margin: 2.6em 50px 0 0;
+  }
+}
+
+@media (max-width: 1155px) {
+  .section {
+    width: 80%;
+    padding: 10em;
+    margin: 5em auto;
+  }
+  .text {
+    font-size: 1.8em;
+    padding: 3em;
+    background: #fff;
+    color: rgb(59, 32, 87);
+  }
+  .text h1 {
+    padding: 0.2em;
+  }
+  .text p {
+    margin-top: 1em;
+    color: rgb(71, 67, 75);
+  }
+  .section img {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section {
+    padding: 5em;
+    flex-direction: column-reverse;
+  }
+  .section img {
+    margin: 0 auto;
+    width: 25rem;
+    padding: 0 auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .section img {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .section img {
+    width: 10rem;
+  }
+  .text {
+    font-size: 1.5em;
+    padding: 3em;
+    background: #fff;
+    color: rgb(59, 32, 87);
+  }
+}
+
+@media (max-width: 430px) {
+  .section {
+    padding: 3em;
+  }
+  .text {
+    padding: 2em;
+  }
+  .text h1 {
+    font-size: 1.6rem;
+  }
+  .text p {
+    font-size: 0.8rem;
+  }
 }
